@@ -8,6 +8,9 @@
 import UIKit
 
 class HomeTableViewHeaderCell: UITableViewHeaderFooterView {
+    
+    // MARK: IBOutlet
+    @IBOutlet weak var headerTitleLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

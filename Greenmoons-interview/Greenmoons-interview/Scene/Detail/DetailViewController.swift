@@ -24,6 +24,13 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var storyLabel: UILabel!
     @IBOutlet weak var addToFavoriteButton: UIButton!
     
+    // MARK: @IBAction
+    
+    @IBAction private func addToFavoriteButtonTapped(_ sender: Any) {
+        guard let movieDetail = router?.dataStore?.movieDetail else { return }
+        interactor?.addFavorite(movie: movieDetail)
+    }
+    
     // MARK: Object lifecycle
   
     override public func awakeFromNib() {
@@ -55,6 +62,7 @@ class DetailViewController: UIViewController {
     // MARK: Function
     
     func setupView() {
+        self.title = "Cinemo"
         posterImageView.layer.masksToBounds = true
         if let movieDetail: Movies = router?.dataStore?.movieDetail {
             posterImageView.kf.indicatorType = .activity

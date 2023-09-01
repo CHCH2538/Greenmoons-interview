@@ -9,6 +9,7 @@ import UIKit
 
 protocol HomeRoutingLogic {
     func routeToDetail(movieDetail: Movies)
+    func routeToFavorite()
 }
 
 protocol HomeDataPassing {
@@ -29,5 +30,11 @@ class HomeRouter: HomeRoutingLogic, HomeDataPassing {
         guard let vc = vc else { return }
         viewController?.navigationController?.pushViewController(vc, animated: true)
     }
-  
+    
+    func routeToFavorite() {
+        let storyboard = UIStoryboard(name: "Favorite", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FavoriteViewController") as? FavoriteViewController
+        guard let vc = vc else { return }
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
 }

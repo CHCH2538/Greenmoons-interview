@@ -81,7 +81,7 @@ class HomeViewController: UIViewController {
     }
     
     @objc private func favouriteButtonTapped() {
-        
+        router?.routeToFavorite()
     }
 }
 

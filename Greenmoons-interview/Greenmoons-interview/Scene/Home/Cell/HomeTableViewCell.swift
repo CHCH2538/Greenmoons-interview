@@ -31,6 +31,7 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     func setupCell(posterUrl: String, genre: String, titleEN: String, titleTH: String, releaseDate: String) {
+        posterImageView.layer.masksToBounds = true
         posterImageView.kf.indicatorType = .activity
         if let imageURL: URL = URL(string: posterUrl) {
             posterImageView.kf.setImage(with: imageURL, options: [.transition(.fade(0.2))])

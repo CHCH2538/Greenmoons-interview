@@ -65,6 +65,7 @@ class HomeViewController: UIViewController {
         self.navigationItem.rightBarButtonItem?.tintColor = #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "HomeTableViewHeaderCell", bundle: nil), forHeaderFooterViewReuseIdentifier: "HomeTableViewHeaderCell")
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
         interactor?.fetchMovieList(request: .init())
     }
@@ -101,6 +102,19 @@ extension HomeViewController: HomeDisplayLogic {
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView: HomeTableViewHeaderCell? = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HomeTableViewHeaderCell") as? HomeTableViewHeaderCell
+        guard let headerView = headerView else {
+            return UITableViewHeaderFooterView()
+        }
+        return headerView
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let data: [Movies] = router?.dataStore?.moviesList?.movies else { return 0 }
         return data.count

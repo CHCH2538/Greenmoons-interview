@@ -36,8 +36,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zVH-l2-RwE">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zVH-l2-RwE">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-FA-esT">
@@ -84,9 +84,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZWS-FA-esT" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="0dL-se-5ed"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zVH-l2-RwE" secondAttribute="bottom" id="3hw-XN-o2u"/>
                             <constraint firstAttribute="bottom" secondItem="ZWS-FA-esT" secondAttribute="bottom" id="7Oh-uA-91Z"/>
                             <constraint firstItem="zVH-l2-RwE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="HPg-Kg-eJA"/>
+                            <constraint firstAttribute="bottom" secondItem="zVH-l2-RwE" secondAttribute="bottom" id="bAP-zz-WHY"/>
                             <constraint firstItem="ZWS-FA-esT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dNH-Fy-6xV"/>
                             <constraint firstItem="zVH-l2-RwE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="g79-XP-uKd"/>
                             <constraint firstItem="ZWS-FA-esT" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="gCN-vg-0zh"/>

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeRoutingLogic {
-
+    func routeToDetail(movieDetail: Movies)
 }
 
 protocol HomeDataPassing {
@@ -20,5 +20,14 @@ class HomeRouter: HomeRoutingLogic, HomeDataPassing {
     var dataStore: HomeDataStore?
   
     // MARK: Routing
+    
+    func routeToDetail(movieDetail: Movies) {
+        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        var dataStore = vc?.router?.dataStore
+        dataStore?.movieDetail = movieDetail
+        guard let vc = vc else { return }
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
   
 }

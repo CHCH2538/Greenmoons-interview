@@ -34,6 +34,13 @@
 		27DE8BBA2AA274F6005A767E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BB92AA274F6005A767E /* StringExtension.swift */; };
 		27DE8BBD2AA283C2005A767E /* HomeTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BBB2AA283C2005A767E /* HomeTableViewHeaderCell.swift */; };
 		27DE8BBE2AA283C2005A767E /* HomeTableViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DE8BBC2AA283C2005A767E /* HomeTableViewHeaderCell.xib */; };
+		27DE8BC62AA28CA5005A767E /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BC02AA28CA5005A767E /* DetailPresenter.swift */; };
+		27DE8BC72AA28CA5005A767E /* DetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BC12AA28CA5005A767E /* DetailWorker.swift */; };
+		27DE8BC82AA28CA5005A767E /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BC22AA28CA5005A767E /* DetailRouter.swift */; };
+		27DE8BC92AA28CA5005A767E /* DetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BC32AA28CA5005A767E /* DetailModels.swift */; };
+		27DE8BCA2AA28CA5005A767E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BC42AA28CA5005A767E /* DetailViewController.swift */; };
+		27DE8BCB2AA28CA5005A767E /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BC52AA28CA5005A767E /* DetailInteractor.swift */; };
+		27DE8BCD2AA28D67005A767E /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DE8BCC2AA28D67005A767E /* Detail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +104,13 @@
 		27DE8BB92AA274F6005A767E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		27DE8BBB2AA283C2005A767E /* HomeTableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderCell.swift; sourceTree = "<group>"; };
 		27DE8BBC2AA283C2005A767E /* HomeTableViewHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeaderCell.xib; sourceTree = "<group>"; };
+		27DE8BC02AA28CA5005A767E /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		27DE8BC12AA28CA5005A767E /* DetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorker.swift; sourceTree = "<group>"; };
+		27DE8BC22AA28CA5005A767E /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		27DE8BC32AA28CA5005A767E /* DetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModels.swift; sourceTree = "<group>"; };
+		27DE8BC42AA28CA5005A767E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		27DE8BC52AA28CA5005A767E /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		27DE8BCC2AA28D67005A767E /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +213,7 @@
 		273D83AE2AA245CC000E2B2C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				27DE8BBF2AA28C8C005A767E /* Detail */,
 				273D83AF2AA24744000E2B2C /* Home */,
 			);
 			path = Scene;
@@ -239,6 +254,20 @@
 				27DE8BB92AA274F6005A767E /* StringExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		27DE8BBF2AA28C8C005A767E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				27DE8BC02AA28CA5005A767E /* DetailPresenter.swift */,
+				27DE8BC12AA28CA5005A767E /* DetailWorker.swift */,
+				27DE8BC22AA28CA5005A767E /* DetailRouter.swift */,
+				27DE8BC32AA28CA5005A767E /* DetailModels.swift */,
+				27DE8BC42AA28CA5005A767E /* DetailViewController.swift */,
+				27DE8BC52AA28CA5005A767E /* DetailInteractor.swift */,
+				27DE8BCC2AA28D67005A767E /* Detail.storyboard */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +386,7 @@
 				273D837E2AA23E6E000E2B2C /* Assets.xcassets in Resources */,
 				273D83C12AA24E4D000E2B2C /* HomeTableViewCell.xib in Resources */,
 				273D83BD2AA24768000E2B2C /* Home.storyboard in Resources */,
+				27DE8BCD2AA28D67005A767E /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,17 +413,23 @@
 			files = (
 				273D83AD2AA242CA000E2B2C /* Movies.swift in Sources */,
 				273D83B72AA2475D000E2B2C /* HomeWorker.swift in Sources */,
+				27DE8BCA2AA28CA5005A767E /* DetailViewController.swift in Sources */,
 				273D83C02AA24E4D000E2B2C /* HomeTableViewCell.swift in Sources */,
 				273D83A62AA23FD5000E2B2C /* BaseAPI.swift in Sources */,
 				273D83C52AA24EC0000E2B2C /* UIViewExtension.swift in Sources */,
 				273D83C72AA2503A000E2B2C /* UIImageViewExtension.swift in Sources */,
+				27DE8BC92AA28CA5005A767E /* DetailModels.swift in Sources */,
 				273D83752AA23E69000E2B2C /* AppDelegate.swift in Sources */,
 				273D83AC2AA242CA000E2B2C /* MoviesResponseModel.swift in Sources */,
 				27DE8BBA2AA274F6005A767E /* StringExtension.swift in Sources */,
 				273D83A82AA23FFF000E2B2C /* APIConstant.swift in Sources */,
+				27DE8BC62AA28CA5005A767E /* DetailPresenter.swift in Sources */,
 				273D83BB2AA2475D000E2B2C /* HomeInteractor.swift in Sources */,
+				27DE8BC82AA28CA5005A767E /* DetailRouter.swift in Sources */,
+				27DE8BCB2AA28CA5005A767E /* DetailInteractor.swift in Sources */,
 				273D83772AA23E69000E2B2C /* SceneDelegate.swift in Sources */,
 				273D83B62AA2475D000E2B2C /* HomePresenter.swift in Sources */,
+				27DE8BC72AA28CA5005A767E /* DetailWorker.swift in Sources */,
 				273D83C92AA25371000E2B2C /* UILabelExtension.swift in Sources */,
 				273D83B82AA2475D000E2B2C /* HomeRouter.swift in Sources */,
 				273D83B92AA2475D000E2B2C /* HomeModels.swift in Sources */,

@@ -132,5 +132,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let movies: [Movies] = router?.dataStore?.moviesList?.movies else { return }
         let movie: Movies = movies[indexPath.row]
         tableView.deselectRow(at: indexPath, animated: true)
+        router?.routeToDetail(movieDetail: movie)
     }
 }

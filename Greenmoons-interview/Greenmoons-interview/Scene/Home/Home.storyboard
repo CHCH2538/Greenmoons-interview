@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22138.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tSo-h1-cqr">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22113"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="CXw-fZ-5er">
+            <objects>
+                <navigationController id="tSo-h1-cqr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Ix-El-ClY">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="labelColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Q1r-BC-E0o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hy0-bE-b4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-874" y="-2"/>
+        </scene>
+        <!--Cinemo-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="Cinemo" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Greenmoons_interview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zVH-l2-RwE">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-FA-esT">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ToB-e9-u3k">
+                                        <rect key="frame" x="146.66666666666666" y="376" width="100" height="100"/>
+                                        <subviews>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-BL-vD3">
+                                                <rect key="frame" x="31.333333333333343" y="31.666666666666686" width="37" height="37"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Vda-BL-vD3" firstAttribute="centerX" secondItem="ToB-e9-u3k" secondAttribute="centerX" id="Nsc-y8-nhg"/>
+                                            <constraint firstAttribute="height" constant="100" id="Rnr-Wb-nmX"/>
+                                            <constraint firstItem="Vda-BL-vD3" firstAttribute="centerY" secondItem="ToB-e9-u3k" secondAttribute="centerY" id="s50-AW-8nz"/>
+                                            <constraint firstAttribute="width" constant="100" id="t27-pT-tJG"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusTopLeft">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusTopRight">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusBottomLeft">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusBottomRight">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ToB-e9-u3k" firstAttribute="centerY" secondItem="ZWS-FA-esT" secondAttribute="centerY" id="RyD-ro-39f"/>
+                                    <constraint firstItem="ToB-e9-u3k" firstAttribute="centerX" secondItem="ZWS-FA-esT" secondAttribute="centerX" id="WE7-SN-r2s"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZWS-FA-esT" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="0dL-se-5ed"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zVH-l2-RwE" secondAttribute="bottom" id="3hw-XN-o2u"/>
+                            <constraint firstAttribute="bottom" secondItem="ZWS-FA-esT" secondAttribute="bottom" id="7Oh-uA-91Z"/>
+                            <constraint firstItem="zVH-l2-RwE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="HPg-Kg-eJA"/>
+                            <constraint firstItem="ZWS-FA-esT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dNH-Fy-6xV"/>
+                            <constraint firstItem="zVH-l2-RwE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="g79-XP-uKd"/>
+                            <constraint firstItem="ZWS-FA-esT" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="gCN-vg-0zh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zVH-l2-RwE" secondAttribute="trailing" id="vvb-bZ-BiE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cinemo" id="tMF-N6-S8G"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="Vda-BL-vD3" id="PE0-s0-zgR"/>
+                        <outlet property="loadingView" destination="ZWS-FA-esT" id="rj7-B2-48V"/>
+                        <outlet property="tableView" destination="zVH-l2-RwE" id="Ytw-Y7-Jq4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

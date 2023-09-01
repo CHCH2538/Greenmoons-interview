@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		273D83752AA23E69000E2B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83742AA23E69000E2B2C /* AppDelegate.swift */; };
+		273D83772AA23E69000E2B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83762AA23E69000E2B2C /* SceneDelegate.swift */; };
+		273D837E2AA23E6E000E2B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273D837D2AA23E6E000E2B2C /* Assets.xcassets */; };
+		273D83812AA23E6E000E2B2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273D837F2AA23E6E000E2B2C /* LaunchScreen.storyboard */; };
+		273D838C2AA23E6F000E2B2C /* Greenmoons_interviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D838B2AA23E6F000E2B2C /* Greenmoons_interviewTests.swift */; };
+		273D83962AA23E6F000E2B2C /* Greenmoons_interviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83952AA23E6F000E2B2C /* Greenmoons_interviewUITests.swift */; };
+		273D83982AA23E6F000E2B2C /* Greenmoons_interviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83972AA23E6F000E2B2C /* Greenmoons_interviewUITestsLaunchTests.swift */; };
+		273D83A62AA23FD5000E2B2C /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83A52AA23FD5000E2B2C /* BaseAPI.swift */; };
+		273D83A82AA23FFF000E2B2C /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83A72AA23FFF000E2B2C /* APIConstant.swift */; };
+		273D83AC2AA242CA000E2B2C /* MoviesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83AA2AA242CA000E2B2C /* MoviesResponseModel.swift */; };
+		273D83AD2AA242CA000E2B2C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83AB2AA242CA000E2B2C /* Movies.swift */; };
+		273D83B62AA2475D000E2B2C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83B02AA2475D000E2B2C /* HomePresenter.swift */; };
+		273D83B72AA2475D000E2B2C /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83B12AA2475D000E2B2C /* HomeWorker.swift */; };
+		273D83B82AA2475D000E2B2C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83B22AA2475D000E2B2C /* HomeRouter.swift */; };
+		273D83B92AA2475D000E2B2C /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83B32AA2475D000E2B2C /* HomeModels.swift */; };
+		273D83BA2AA2475D000E2B2C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83B42AA2475D000E2B2C /* HomeViewController.swift */; };
+		273D83BB2AA2475D000E2B2C /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83B52AA2475D000E2B2C /* HomeInteractor.swift */; };
+		273D83BD2AA24768000E2B2C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273D83BC2AA24768000E2B2C /* Home.storyboard */; };
+		273D83C02AA24E4D000E2B2C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83BE2AA24E4D000E2B2C /* HomeTableViewCell.swift */; };
+		273D83C12AA24E4D000E2B2C /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 273D83BF2AA24E4D000E2B2C /* HomeTableViewCell.xib */; };
+		273D83C52AA24EC0000E2B2C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83C42AA24EC0000E2B2C /* UIViewExtension.swift */; };
+		273D83C72AA2503A000E2B2C /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83C62AA2503A000E2B2C /* UIImageViewExtension.swift */; };
+		273D83C92AA25371000E2B2C /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D83C82AA25371000E2B2C /* UILabelExtension.swift */; };
+		27DE8BB82AA25FA7005A767E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 27DE8BB72AA25FA7005A767E /* Kingfisher */; };
+		27DE8BBA2AA274F6005A767E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BB92AA274F6005A767E /* StringExtension.swift */; };
+		27DE8BBD2AA283C2005A767E /* HomeTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE8BBB2AA283C2005A767E /* HomeTableViewHeaderCell.swift */; };
+		27DE8BBE2AA283C2005A767E /* HomeTableViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DE8BBC2AA283C2005A767E /* HomeTableViewHeaderCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		273D83882AA23E6F000E2B2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273D83692AA23E69000E2B2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 273D83702AA23E69000E2B2C;
+			remoteInfo = "Greenmoons-interview";
+		};
+		273D83922AA23E6F000E2B2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273D83692AA23E69000E2B2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 273D83702AA23E69000E2B2C;
+			remoteInfo = "Greenmoons-interview";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27508DA12AA25EFF00C42675 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		273D83712AA23E69000E2B2C /* Greenmoons-interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Greenmoons-interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273D83742AA23E69000E2B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		273D83762AA23E69000E2B2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		273D837D2AA23E6E000E2B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		273D83802AA23E6E000E2B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		273D83822AA23E6E000E2B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		273D83872AA23E6F000E2B2C /* Greenmoons-interviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Greenmoons-interviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273D838B2AA23E6F000E2B2C /* Greenmoons_interviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greenmoons_interviewTests.swift; sourceTree = "<group>"; };
+		273D83912AA23E6F000E2B2C /* Greenmoons-interviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Greenmoons-interviewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273D83952AA23E6F000E2B2C /* Greenmoons_interviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greenmoons_interviewUITests.swift; sourceTree = "<group>"; };
+		273D83972AA23E6F000E2B2C /* Greenmoons_interviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greenmoons_interviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		273D83A52AA23FD5000E2B2C /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		273D83A72AA23FFF000E2B2C /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		273D83AA2AA242CA000E2B2C /* MoviesResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesResponseModel.swift; sourceTree = "<group>"; };
+		273D83AB2AA242CA000E2B2C /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		273D83B02AA2475D000E2B2C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		273D83B12AA2475D000E2B2C /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		273D83B22AA2475D000E2B2C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		273D83B32AA2475D000E2B2C /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		273D83B42AA2475D000E2B2C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		273D83B52AA2475D000E2B2C /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		273D83BC2AA24768000E2B2C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		273D83BE2AA24E4D000E2B2C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		273D83BF2AA24E4D000E2B2C /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		273D83C42AA24EC0000E2B2C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		273D83C62AA2503A000E2B2C /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		273D83C82AA25371000E2B2C /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		27DE8BB92AA274F6005A767E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		27DE8BBB2AA283C2005A767E /* HomeTableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderCell.swift; sourceTree = "<group>"; };
+		27DE8BBC2AA283C2005A767E /* HomeTableViewHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeaderCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		273D836E2AA23E69000E2B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DE8BB82AA25FA7005A767E /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273D83842AA23E6F000E2B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273D838E2AA23E6F000E2B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		273D83682AA23E69000E2B2C = {
+			isa = PBXGroup;
+			children = (
+				273D83732AA23E69000E2B2C /* Greenmoons-interview */,
+				273D838A2AA23E6F000E2B2C /* Greenmoons-interviewTests */,
+				273D83942AA23E6F000E2B2C /* Greenmoons-interviewUITests */,
+				273D83722AA23E69000E2B2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		273D83722AA23E69000E2B2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				273D83712AA23E69000E2B2C /* Greenmoons-interview.app */,
+				273D83872AA23E6F000E2B2C /* Greenmoons-interviewTests.xctest */,
+				273D83912AA23E6F000E2B2C /* Greenmoons-interviewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		273D83732AA23E69000E2B2C /* Greenmoons-interview */ = {
+			isa = PBXGroup;
+			children = (
+				273D83C32AA24EAE000E2B2C /* Extension */,
+				273D83AE2AA245CC000E2B2C /* Scene */,
+				273D83A42AA23FC8000E2B2C /* API */,
+				273D83742AA23E69000E2B2C /* AppDelegate.swift */,
+				273D83762AA23E69000E2B2C /* SceneDelegate.swift */,
+				273D837D2AA23E6E000E2B2C /* Assets.xcassets */,
+				273D837F2AA23E6E000E2B2C /* LaunchScreen.storyboard */,
+				273D83822AA23E6E000E2B2C /* Info.plist */,
+			);
+			path = "Greenmoons-interview";
+			sourceTree = "<group>";
+		};
+		273D838A2AA23E6F000E2B2C /* Greenmoons-interviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				273D838B2AA23E6F000E2B2C /* Greenmoons_interviewTests.swift */,
+			);
+			path = "Greenmoons-interviewTests";
+			sourceTree = "<group>";
+		};
+		273D83942AA23E6F000E2B2C /* Greenmoons-interviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				273D83952AA23E6F000E2B2C /* Greenmoons_interviewUITests.swift */,
+				273D83972AA23E6F000E2B2C /* Greenmoons_interviewUITestsLaunchTests.swift */,
+			);
+			path = "Greenmoons-interviewUITests";
+			sourceTree = "<group>";
+		};
+		273D83A42AA23FC8000E2B2C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				273D83A92AA24247000E2B2C /* Models */,
+				273D83A52AA23FD5000E2B2C /* BaseAPI.swift */,
+				273D83A72AA23FFF000E2B2C /* APIConstant.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		273D83A92AA24247000E2B2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				273D83AB2AA242CA000E2B2C /* Movies.swift */,
+				273D83AA2AA242CA000E2B2C /* MoviesResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		273D83AE2AA245CC000E2B2C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				273D83AF2AA24744000E2B2C /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		273D83AF2AA24744000E2B2C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				273D83C22AA24E54000E2B2C /* Cell */,
+				273D83B02AA2475D000E2B2C /* HomePresenter.swift */,
+				273D83B12AA2475D000E2B2C /* HomeWorker.swift */,
+				273D83B22AA2475D000E2B2C /* HomeRouter.swift */,
+				273D83B32AA2475D000E2B2C /* HomeModels.swift */,
+				273D83B42AA2475D000E2B2C /* HomeViewController.swift */,
+				273D83B52AA2475D000E2B2C /* HomeInteractor.swift */,
+				273D83BC2AA24768000E2B2C /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		273D83C22AA24E54000E2B2C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				273D83BE2AA24E4D000E2B2C /* HomeTableViewCell.swift */,
+				273D83BF2AA24E4D000E2B2C /* HomeTableViewCell.xib */,
+				27DE8BBB2AA283C2005A767E /* HomeTableViewHeaderCell.swift */,
+				27DE8BBC2AA283C2005A767E /* HomeTableViewHeaderCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		273D83C32AA24EAE000E2B2C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				273D83C42AA24EC0000E2B2C /* UIViewExtension.swift */,
+				273D83C62AA2503A000E2B2C /* UIImageViewExtension.swift */,
+				273D83C82AA25371000E2B2C /* UILabelExtension.swift */,
+				27DE8BB92AA274F6005A767E /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		273D83702AA23E69000E2B2C /* Greenmoons-interview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273D839B2AA23E6F000E2B2C /* Build configuration list for PBXNativeTarget "Greenmoons-interview" */;
+			buildPhases = (
+				273D836D2AA23E69000E2B2C /* Sources */,
+				273D836E2AA23E69000E2B2C /* Frameworks */,
+				273D836F2AA23E69000E2B2C /* Resources */,
+				27508DA12AA25EFF00C42675 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Greenmoons-interview";
+			packageProductDependencies = (
+				27DE8BB72AA25FA7005A767E /* Kingfisher */,
+			);
+			productName = "Greenmoons-interview";
+			productReference = 273D83712AA23E69000E2B2C /* Greenmoons-interview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		273D83862AA23E6F000E2B2C /* Greenmoons-interviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273D839E2AA23E6F000E2B2C /* Build configuration list for PBXNativeTarget "Greenmoons-interviewTests" */;
+			buildPhases = (
+				273D83832AA23E6F000E2B2C /* Sources */,
+				273D83842AA23E6F000E2B2C /* Frameworks */,
+				273D83852AA23E6F000E2B2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				273D83892AA23E6F000E2B2C /* PBXTargetDependency */,
+			);
+			name = "Greenmoons-interviewTests";
+			productName = "Greenmoons-interviewTests";
+			productReference = 273D83872AA23E6F000E2B2C /* Greenmoons-interviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		273D83902AA23E6F000E2B2C /* Greenmoons-interviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273D83A12AA23E6F000E2B2C /* Build configuration list for PBXNativeTarget "Greenmoons-interviewUITests" */;
+			buildPhases = (
+				273D838D2AA23E6F000E2B2C /* Sources */,
+				273D838E2AA23E6F000E2B2C /* Frameworks */,
+				273D838F2AA23E6F000E2B2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				273D83932AA23E6F000E2B2C /* PBXTargetDependency */,
+			);
+			name = "Greenmoons-interviewUITests";
+			productName = "Greenmoons-interviewUITests";
+			productReference = 273D83912AA23E6F000E2B2C /* Greenmoons-interviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		273D83692AA23E69000E2B2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					273D83702AA23E69000E2B2C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					273D83862AA23E6F000E2B2C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 273D83702AA23E69000E2B2C;
+					};
+					273D83902AA23E6F000E2B2C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 273D83702AA23E69000E2B2C;
+					};
+				};
+			};
+			buildConfigurationList = 273D836C2AA23E69000E2B2C /* Build configuration list for PBXProject "Greenmoons-interview" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 273D83682AA23E69000E2B2C;
+			packageReferences = (
+				27DE8BB62AA25FA7005A767E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 273D83722AA23E69000E2B2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				273D83702AA23E69000E2B2C /* Greenmoons-interview */,
+				273D83862AA23E6F000E2B2C /* Greenmoons-interviewTests */,
+				273D83902AA23E6F000E2B2C /* Greenmoons-interviewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		273D836F2AA23E69000E2B2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273D83812AA23E6E000E2B2C /* LaunchScreen.storyboard in Resources */,
+				27DE8BBE2AA283C2005A767E /* HomeTableViewHeaderCell.xib in Resources */,
+				273D837E2AA23E6E000E2B2C /* Assets.xcassets in Resources */,
+				273D83C12AA24E4D000E2B2C /* HomeTableViewCell.xib in Resources */,
+				273D83BD2AA24768000E2B2C /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273D83852AA23E6F000E2B2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273D838F2AA23E6F000E2B2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		273D836D2AA23E69000E2B2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273D83AD2AA242CA000E2B2C /* Movies.swift in Sources */,
+				273D83B72AA2475D000E2B2C /* HomeWorker.swift in Sources */,
+				273D83C02AA24E4D000E2B2C /* HomeTableViewCell.swift in Sources */,
+				273D83A62AA23FD5000E2B2C /* BaseAPI.swift in Sources */,
+				273D83C52AA24EC0000E2B2C /* UIViewExtension.swift in Sources */,
+				273D83C72AA2503A000E2B2C /* UIImageViewExtension.swift in Sources */,
+				273D83752AA23E69000E2B2C /* AppDelegate.swift in Sources */,
+				273D83AC2AA242CA000E2B2C /* MoviesResponseModel.swift in Sources */,
+				27DE8BBA2AA274F6005A767E /* StringExtension.swift in Sources */,
+				273D83A82AA23FFF000E2B2C /* APIConstant.swift in Sources */,
+				273D83BB2AA2475D000E2B2C /* HomeInteractor.swift in Sources */,
+				273D83772AA23E69000E2B2C /* SceneDelegate.swift in Sources */,
+				273D83B62AA2475D000E2B2C /* HomePresenter.swift in Sources */,
+				273D83C92AA25371000E2B2C /* UILabelExtension.swift in Sources */,
+				273D83B82AA2475D000E2B2C /* HomeRouter.swift in Sources */,
+				273D83B92AA2475D000E2B2C /* HomeModels.swift in Sources */,
+				273D83BA2AA2475D000E2B2C /* HomeViewController.swift in Sources */,
+				27DE8BBD2AA283C2005A767E /* HomeTableViewHeaderCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273D83832AA23E6F000E2B2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273D838C2AA23E6F000E2B2C /* Greenmoons_interviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273D838D2AA23E6F000E2B2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273D83962AA23E6F000E2B2C /* Greenmoons_interviewUITests.swift in Sources */,
+				273D83982AA23E6F000E2B2C /* Greenmoons_interviewUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		273D83892AA23E6F000E2B2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 273D83702AA23E69000E2B2C /* Greenmoons-interview */;
+			targetProxy = 273D83882AA23E6F000E2B2C /* PBXContainerItemProxy */;
+		};
+		273D83932AA23E6F000E2B2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 273D83702AA23E69000E2B2C /* Greenmoons-interview */;
+			targetProxy = 273D83922AA23E6F000E2B2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		273D837F2AA23E6E000E2B2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				273D83802AA23E6E000E2B2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		273D83992AA23E6F000E2B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		273D839A2AA23E6F000E2B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		273D839C2AA23E6F000E2B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2SNLS6CYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Greenmoons-interview/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pongpubate.Greenmoons-interview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		273D839D2AA23E6F000E2B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2SNLS6CYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Greenmoons-interview/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pongpubate.Greenmoons-interview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		273D839F2AA23E6F000E2B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2SNLS6CYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pongpubate.Greenmoons-interviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Greenmoons-interview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Greenmoons-interview";
+			};
+			name = Debug;
+		};
+		273D83A02AA23E6F000E2B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2SNLS6CYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pongpubate.Greenmoons-interviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Greenmoons-interview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Greenmoons-interview";
+			};
+			name = Release;
+		};
+		273D83A22AA23E6F000E2B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2SNLS6CYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pongpubate.Greenmoons-interviewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Greenmoons-interview";
+			};
+			name = Debug;
+		};
+		273D83A32AA23E6F000E2B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2SNLS6CYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pongpubate.Greenmoons-interviewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Greenmoons-interview";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		273D836C2AA23E69000E2B2C /* Build configuration list for PBXProject "Greenmoons-interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273D83992AA23E6F000E2B2C /* Debug */,
+				273D839A2AA23E6F000E2B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		273D839B2AA23E6F000E2B2C /* Build configuration list for PBXNativeTarget "Greenmoons-interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273D839C2AA23E6F000E2B2C /* Debug */,
+				273D839D2AA23E6F000E2B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		273D839E2AA23E6F000E2B2C /* Build configuration list for PBXNativeTarget "Greenmoons-interviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273D839F2AA23E6F000E2B2C /* Debug */,
+				273D83A02AA23E6F000E2B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		273D83A12AA23E6F000E2B2C /* Build configuration list for PBXNativeTarget "Greenmoons-interviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273D83A22AA23E6F000E2B2C /* Debug */,
+				273D83A32AA23E6F000E2B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27DE8BB62AA25FA7005A767E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27DE8BB72AA25FA7005A767E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27DE8BB62AA25FA7005A767E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 273D83692AA23E69000E2B2C /* Project object */;
+}

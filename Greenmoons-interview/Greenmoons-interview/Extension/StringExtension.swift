@@ -17,8 +17,18 @@ extension String {
             outputFormatter.dateFormat = "MMMM d, yyyy"
             return outputFormatter.string(from: date)
         } else {
-            return nil
+            let inputFormatterWithTime = DateFormatter()
+            inputFormatterWithTime.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            
+            if let dateWithTime = inputFormatterWithTime.date(from: self) {
+                let outputFormatter = DateFormatter()
+                outputFormatter.dateFormat = "MMMM d, yyyy"
+                return outputFormatter.string(from: dateWithTime)
+            } else {
+                return nil
+            }
         }
     }
+
 }
 

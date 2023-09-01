@@ -72,7 +72,7 @@ class DetailViewController: UIViewController {
             genreLabel.text = movieDetail.genre
             enTitleLabel.text = movieDetail.title_en
             thTitleLabel.text = movieDetail.title_th
-            storyLabel.text = movieDetail.synopsis_th
+            storyLabel.text = movieDetail.synopsis_en
         }
     }
   
